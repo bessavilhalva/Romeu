@@ -1,4 +1,3 @@
-
 <div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
   <div class="flb">
     <div class="Aligner-item Aligner-item--top"></div>
@@ -6,22 +5,22 @@
     <div class="Aligner-item Aligner-item--bottom"></div>
   </div>
 </div>
+
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>login</ion-title>
-  </ion-navbar>
-
 </ion-header>
 
   <ion-content padding>
-    <h2>Welcome to Ionic!</h2>
-    <p>
-      This starter project comes with simple tabs-based layout for apps
-      that are going to primarily use a Tabbed UI.
-    </p>
-    <p>
-      Take a look at the <code>src/pages/</code> directory to add or change tabs,
-      update any existing page or create new pages.
-    </p>
+    <ion-list no-lines class="inputs">
+      <ion-item>
+          <ion-input class="inUsername" type="text" placeholder="Usuário"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input class="inPassword" type="text" placeholder="Senha"></ion-input>
+      </ion-item>
+      <ion-item>
+        <button (click)="login()" class="signIn" ion-button round block>Sign in</button>
+      </ion-item>
+    </ion-list>
+
+    <p class="bottom">Você ainda não tem conta?<a tappable color="primary">Registrar</a></p>
   </ion-content>

@@ -1,33 +1,27 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
-/**
- * Generated class for the LoginPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
 })
+
 export class LoginPage {
 
   splash = true;
-  tabBarElement: any;
+  //secondPage = SecondPagePage;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.tabBarElement = document.querySelector('.tabbar');
+  constructor(public navCtrl: NavController) {
   }
-
+  login(){
+    this.navCtrl.push('HomePage');
+  }
   ionViewDidLoad() {
-    this.tabBarElement.style.display = 'none';
-    setTimeout(() => {
-    this.splash = false;
-    this.tabBarElement.style.display = 'flex';
-    }, 4000);
+    setTimeout(() => this.splash = false, 4000);
   }
 
 }
