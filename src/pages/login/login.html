@@ -5,22 +5,24 @@
     <div class="Aligner-item Aligner-item--bottom"></div>
   </div>
 </div>
+  <ion-content class="background">
 
-<ion-header>
-</ion-header>
+        <ion-card-content>
+             <img src="/assets/logo.png"/>
+          <ion-list no-lines>
+            <ion-item class="caixaLogin">
+              <ion-label stacked class="fonte">Usuário</ion-label>
+              <ion-input class="inputClass" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label stacked class="fonte">Senha</ion-label>
+              <ion-input class="inputClass" type="password"></ion-input>
+            </ion-item>
+            <ion-item>
+              <p><a class="esqueciSenha">Recuperar senha</a></p>
+            </ion-item>
+            <button ion-button color="danger" block outline>ENTRAR</button>
+          </ion-list>
+        </ion-card-content>
 
-  <ion-content padding>
-    <ion-list no-lines class="inputs">
-      <ion-item>
-          <ion-input class="inUsername" type="text" placeholder="Usuário"></ion-input>
-      </ion-item>
-      <ion-item>
-          <ion-input class="inPassword" type="text" placeholder="Senha"></ion-input>
-      </ion-item>
-      <ion-item>
-        <button (click)="login()" class="signIn" ion-button round block>Sign in</button>
-      </ion-item>
-    </ion-list>
-
-    <p class="bottom">Você ainda não tem conta?<a tappable color="primary">Registrar</a></p>
-  </ion-content>
+    </ion-content>

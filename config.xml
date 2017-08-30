@@ -19,13 +19,8 @@
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="FadeSplashScreenDuration" value="300" />
-    <preference name="SplashScreenDelay" value="0"/>
-    <preference name="ShowSplashScreen" value="false"/>
-
-    <!--
-      Change these to configure how the splashscreen displays and fades in/out.
-      More info here: https://github.com/apache/cordova-plugin-splashscreen
-    -->
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="ShowSplashScreen" value="false" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
     <platform name="android">
@@ -89,4 +84,8 @@
     <plugin name="cordova-plugin-statusbar" spec="2.2.2" />
     <plugin name="cordova-plugin-device" spec="1.1.4" />
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
+    <plugin name="cordova-plugin-googlemaps" spec="https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyAOhCENt01KjtMy-A9RJ1nrRd9Zs3jl6rE" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyBlaMRDh8gFRO5l7oZZgdALs4FB6O8RT7I" />
+    </plugin>
 </widget>
